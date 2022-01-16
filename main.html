@@ -3,20 +3,30 @@
 <head>
     <script src="https://kit.fontawesome.com/fc99ae4dbd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tasks.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
     <div class="main">
         <div class="content_header">
-            Header
+            <div id="date"></div>
         </div>
         <div class="content_body">
-            Hello world
+            <div id="task_list_container">
+                <ul id="task_list">
+                    <li>Sample task 1</li>
+                    <li>Sample task 2</li>
+                    <li>Sample task 3</li>
+                </ul>
+            </div>
         </div>
         <div class="content_footer">
             <span id="new_task_container">
-                <input type="text" id="task_input" placeholder="What are you going to do today?">
-                <button id="calendar_button" class="fas fa-calendar"></button>
+                <form onsubmit="submit_task()">
+                    <input type="text" id="task_input" placeholder="What are you going to do today?">
+                    <button id="calendar_button" class="fas fa-calendar"></button>
+                </form>
             </span>
         </div>
     </div>

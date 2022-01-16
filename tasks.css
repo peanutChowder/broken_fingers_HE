@@ -1,0 +1,16 @@
+#task_list_container {
+    width: 70%;
+
+}
+
+#task_list {
+    background-color: rgb(102, 182, 219);
+}
+
+#task_list li {
+    background-color: yellow;
+    border-radius: 15px;
+    padding: 15px 50px;
+    margin: 10px 30px;
+    list-style-type: none;
+}
