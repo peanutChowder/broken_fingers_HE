@@ -1,3 +1,6 @@
+form {
+    display: inline;
+}
 #newTaskContainer {
     background-color: blueviolet;
     width: auto;
@@ -21,7 +24,7 @@
     padding: 10px 50px;
     border-radius: 15px;
     background-color: rgb(247, 254, 255);
-    width: 50%;
+    width: 70%;
     font-size: large;
     text-align: center;
     transition: 0.3s;

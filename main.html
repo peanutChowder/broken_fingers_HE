@@ -17,7 +17,7 @@
                 <ul id="task_list">
                     <div> 
                         <i class="far fa-check-circle"></i> 
-                        <span>Sample task 1</span>
+                        <span id="sample_task">Sample task 1</span>
                     </div>
                     <div> 
                         <i class="far fa-check-circle"></i> 
@@ -32,10 +32,10 @@
         </div>
         <div class="content_footer">
             <span id="new_task_container">
-                <form onsubmit="submit_task()">
+                <form onsubmit="addTask()">
                     <input type="text" id="task_input" placeholder="What are you going to do today?">
-                    <button id="calendar_button" class="fas fa-calendar"></button>
                 </form>
+                <button onclick="displayDateSelector()" id="calendar_button" class="fas fa-calendar"></button>
             </span>
         </div>
     </div>

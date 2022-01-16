@@ -35,6 +35,57 @@ class DateUpdater {
 
 }
 
+class TaskAdder {
+    constructor(taskInputStr, taskListStr) {
+        this.taskInputElement = document.getElementById(taskInputStr);
+        this.taskListElements = document.getElementById(taskListStr);
+    }
+
+    createNewTaskDiv() {
+        var newTaskDiv = document.createElement('div');
+        
+        this.appendNewTaskDivElements(newTaskDiv);
+        this.taskListElements.appendChild(newTaskDiv);
+
+        this.taskInputElement.value = "";
+    }
+
+    appendNewTaskDivElements(newTaskDiv) {
+        var iNode = document.createElement('i');
+        var spanNode = document.createElement('span');
+
+        iNode.className = "far fa-check-circle";
+        spanNode.textContent = this.taskInputElement.value;
+
+        var newTaskDivElements = [iNode, spanNode];
+
+        for (let i = 0; i < newTaskDivElements.length; i++) {
+            newTaskDiv.appendChild(newTaskDivElements[i]);
+        }
+    }
+}
+
+class DateSelector {
+    constructor() {
+        this.slider = this.setSlider()
+    }
+
+    setSlider() {
+        var slider = document.createElement("input");
+        slider.id = "date_slider";
+    }
+}
+
+function addTask() {
+    event.preventDefault();
+    var taskAdder = new TaskAdder("task_input", "task_list");
+    taskAdder.createNewTaskDiv();
+}
+
+function displayDateSelector() {
+    alert("working");
+}
+
 
 function main() {
     var dateUpdater = new DateUpdater("date");
