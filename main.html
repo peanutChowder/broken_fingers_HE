@@ -11,23 +11,26 @@
     <div class="main">
         <div class="content_header">
             <div id="date"></div>
+            <div id="progress_bar">
+                <div id="progress"></div>
+            </div>
         </div>
         <div class="content_body">
             <div id="task_list_container">
                 <ul id="task_list">
                     <div> 
-                        <i class="far fa-check-circle"></i> 
+                        <i onclick="incrementOne(this)" class="far fa-check-circle"></i> 
                         <span id="sample_task">Sample task 1</span>
                         <span></span>
                     </div>
                     <div> 
-                        <i class="far fa-check-circle"></i> 
-                        <span>Sample task 2</span>
+                        <i onclick="incrementOne(this)" class="far fa-check-circle"></i> 
+                        <span id="sample_task">Sample task 2</span>
                         <span></span>
                     </div>
                     <div> 
-                        <i class="far fa-check-circle"></i> 
-                        <span>Sample task 3</span>
+                        <i onclick="incrementOne(this)" class="far fa-check-circle"></i> 
+                        <span id="sample_task">Sample task 3</span>
                         <span></span>
                     </div>
                 </ul>

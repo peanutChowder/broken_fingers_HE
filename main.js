@@ -57,6 +57,7 @@ class TaskAdder {
         this.taskDueDateElement = document.createElement('span');
 
         iNode.className = "far fa-check-circle";
+        iNode.onclick = function () {incrementOne(this)}
         this.taskDueDateElement.id = "due_date";
         spanNode.textContent = this.taskInputElement.value;
 
@@ -161,12 +162,33 @@ function displaySliderValue(value) {
     dateTextElement.textContent = `Due date in seconds: ${document.getElementById("date_slider").value}`;
 }
 
+function incrementOne(taskElement) {
+    // var progress = document.getElementById("progress");
+    // const maxIncrement = 10;
+    // increment += 1;
+    
+
+    // if (increment == maxIncrement) {
+    //     progress.style.width = (incrementOne / maxIncrement) + "%";
+    //     taskElement.parentNode.remove();
+    // }
+    taskElement.parentNode.remove()
+}
+
+// function decrementOne() {
+//     if (increment > 0) {
+//         increment -= 1;
+//     }
+// }
+
 
 function main() {
     var dateUpdater = new DateUpdater("date");
     dateUpdater.displayDate();
 
     a = new DateSelector();
+    // setInterval(decrementOne(), 300);
 }
 
+var increment = 0;
 main();
