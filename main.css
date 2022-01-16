@@ -2,6 +2,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input, button {
+    border: none;
+}
+
 .main {
     background-color: beige;
     height: 100%;
@@ -18,10 +22,52 @@ html {
 }
 
 .content_footer {
-    background-color: rgb(166, 166, 214);
+    padding: 70px 0px;
+    background-color: rgb(203, 252, 255);
     left: 0;
     bottom: 0;
     width: 100%;
+    text-align: center;
     position: fixed;
-    padding: 70px 0px;
 }
+
+#newTaskContainer {
+    background-color: blueviolet;
+    width: auto;
+}
+
+#calendar_button {
+    background-color: rgb(247, 254, 255);
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin: 0px 7px;
+
+}
+
+#calendar_button:hover {
+    background-color: rgb(169, 228, 255);;
+}
+
+#task_input {
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: rgb(247, 254, 255);
+    width: 50%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#task_input:hover {
+    box-shadow: 2px 2px 5px 1px rgb(169, 228, 255);
+}
+
+#task_input:focus {
+    outline: none;
+}
+
+#task_input:focus::placeholder {
+    color: transparent;
+}
+
