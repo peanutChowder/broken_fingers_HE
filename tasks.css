@@ -1,16 +1,33 @@
 #task_list_container {
-    width: 70%;
+    margin: auto;
+    width: 90%;
 
 }
 
-#task_list {
+/* #task_list {
     background-color: rgb(102, 182, 219);
-}
+} */
 
-#task_list li {
-    background-color: yellow;
+#task_list div {
+    background-color: rgb(203, 252, 255);
     border-radius: 15px;
-    padding: 15px 50px;
+    padding: 15px 30px;
     margin: 10px 30px;
     list-style-type: none;
+}
+
+#task_list div span {
+    margin: 0px 25px;
+}
+
+.far {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    transition: 0.3s;
+    /* background-color: rgb(247, 254, 255); */
+    border-radius: 100%;
+}
+
+.far:hover {
+    color: rgb(169, 228, 255);
 }

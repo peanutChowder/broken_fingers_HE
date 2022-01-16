@@ -1,13 +1,3 @@
-.content_footer {
-    padding: 70px 0px;
-    background-color: rgb(203, 252, 255);
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-}
-
 #newTaskContainer {
     background-color: blueviolet;
     width: auto;
@@ -24,7 +14,7 @@
 }
 
 #calendar_button:hover {
-    background-color: rgb(169, 228, 255);;
+    background-color: rgb(169, 228, 255);
 }
 
 #task_input {
@@ -32,6 +22,7 @@
     border-radius: 15px;
     background-color: rgb(247, 254, 255);
     width: 50%;
+    font-size: large;
     text-align: center;
     transition: 0.3s;
 }
