@@ -42,3 +42,20 @@ form {
     color: transparent;
 }
 
+#date_selector {
+    position: absolute;
+    display: table-column;
+    /* flex-direction: column; */
+    bottom: 150px;
+    right: 20px;
+    border-radius: 30px;
+    padding: 20px 20px;
+    background-color: rgb(203, 252, 255);
+    height: 70px;
+    width: 320px;
+}
+
+#date_slider {
+    border: none;
+    width: 90%;
+}
